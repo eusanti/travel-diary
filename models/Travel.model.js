@@ -5,16 +5,20 @@ const travelSchema = new Schema({
     place_id:{ type: Schema.Types.ObjectId, ref: 'Place'},
     title: String,
     pointsInt: [String], // sitios de interés que quieres visitar
-    coments: String, 
-    tips: String,
-    date: Date
-
+    
+    location: {
+      type: {
+        type: String
+    },
+    coordinates: [Number]}
   },
   {
 //valida los cambios realizados
     timestamps: true,
   }
 );
+
+travelSchema.index({ location: '2dsphere' });
 
 const Travel = model("Travel", travelSchema);
 

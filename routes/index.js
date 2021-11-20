@@ -4,9 +4,8 @@ module.exports = app => {
   const baseRoutes = require("./base.routes");
   app.use("/", baseRoutes);
 
-  // Auth routes
-  // const authRoutes = require("./auth.routes");
-  // app.use("/", authRoutes);
+  const authRoutes = require("./auth.routes");
+  app.use("/auth", authRoutes);
 }
 
 //TO DO

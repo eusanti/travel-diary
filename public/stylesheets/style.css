@@ -5,23 +5,27 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-main {
-  padding: 50px;
-}
+
 a {
   color: #00b7ff;
 }
 
-h1,
-p {
+h1 {
   color: white;
+  padding: 20px;
+}
+
+p {
+  padding-left: 20px;
 }
 
 .background {
   background-image: url("../images/background-travel.jpg");
   background-size: cover;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* background animate.

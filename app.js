@@ -26,7 +26,6 @@ app.locals.title = `${capitalized(projectName)} created with IronLauncher`;
 
 // 👇 Start handling routes here
 
-
 require("./routes")(app)
 //TO DO de linea 30
 
